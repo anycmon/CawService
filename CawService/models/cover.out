@@ -1,0 +1,11 @@
+mode: set
+Caw/UserService/models/user.go:16.46,18.2 1 0
+Caw/UserService/models/user.go:30.39,34.2 1 1
+Caw/UserService/models/user.go:36.37,38.2 1 0
+Caw/UserService/models/user.go:40.30,41.82 1 1
+Caw/UserService/models/user.go:45.2,45.13 1 1
+Caw/UserService/models/user.go:41.82,43.3 1 1
+Caw/UserService/models/user.go:47.51,50.46 3 0
+Caw/UserService/models/user.go:54.2,54.19 1 0
+Caw/UserService/models/user.go:50.46,52.3 1 0
+Caw/UserService/models/user.go:63.43,65.2 1 0

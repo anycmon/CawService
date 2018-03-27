@@ -1,0 +1,28 @@
+workspace:
+  base: /go
+  path: src/Caw
+
+pipeline:
+  build:
+    image: golang
+    commands:
+      - mkdir /go/bin
+      - curl https://glide.sh/get | sh
+      - cd UserService
+      - glide install
+      - go build
+  test:
+    image: golang
+    commands:
+      - cd UserService
+      - go test $(go list ./... | grep -v /vendor)
+
+  publish:
+    image: plugins/docker
+    repo: anycmon/user-service
+    username: anycmon
+    password: -----
+
+services:
+  database:
+    image: mongo

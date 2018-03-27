@@ -1,0 +1,3 @@
+address: :9090
+mongo: localhost:27017
+token_expires_in_minutes: 100
